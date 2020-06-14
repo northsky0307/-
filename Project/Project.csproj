@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F9D6CDA-26DE-40F6-81A7-AA9AFFAC0F08}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Project</RootNamespace>
+    <AssemblyName>Project</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="accept_change.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="accept_change.Designer.cs">
+      <DependentUpon>accept_change.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ad_add_rules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ad_add_rules.Designer.cs">
+      <DependentUpon>ad_add_rules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ad_ch_success.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ad_ch_success.Designer.cs">
+      <DependentUpon>ad_ch_success.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ad_rules_ch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ad_rules_ch.Designer.cs">
+      <DependentUpon>ad_rules_ch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ad_rules_hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ad_rules_hang.Designer.cs">
+      <DependentUpon>ad_rules_hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ad_rule_fptree.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ad_rule_fptree.Designer.cs">
+      <DependentUpon>ad_rule_fptree.cs</DependentUpon>
+    </Compile>
+    <Compile Include="first_use.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="first_use.Designer.cs">
+      <DependentUpon>first_use.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hang.cs" />
+    <Compile Include="IOStream.cs" />
+    <Compile Include="User.cs" />
+    <Compile Include="Rule.cs" />
+    <Compile Include="Query_history_operation.cs" />
+    <Compile Include="Query_history.cs" />
+    <Compile Include="admin_func_record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_func_record.Designer.cs">
+      <DependentUpon>admin_func_record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="error_password.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="error_password.Designer.cs">
+      <DependentUpon>error_password.cs</DependentUpon>
+    </Compile>
+    <Compile Include="error_no_exist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="error_no_exist.Designer.cs">
+      <DependentUpon>error_no_exist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin_func_choose.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin_func_choose.Designer.cs">
+      <DependentUpon>admin_func_choose.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rule_operation.cs" />
+    <Compile Include="Static.cs" />
+    <Compile Include="user_no_limit_hang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_no_limit_hang.Designer.cs">
+      <DependentUpon>user_no_limit_hang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_operation.cs" />
+    <Compile Include="user_do_search.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_do_search.Designer.cs">
+      <DependentUpon>user_do_search.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_history.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_history.Designer.cs">
+      <DependentUpon>user_history.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs" />
+    <Compile Include="user_input_error.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_input_error.Designer.cs">
+      <DependentUpon>user_input_error.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_no_limit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_no_limit.Designer.cs">
+      <DependentUpon>user_no_limit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_no_resource.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_no_resource.Designer.cs">
+      <DependentUpon>user_no_resource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_no_rule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_no_rule.Designer.cs">
+      <DependentUpon>user_no_rule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="user_query.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user_query.Designer.cs">
+      <DependentUpon>user_query.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign_in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign_in.Designer.cs">
+      <DependentUpon>Sign_in.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Awesomium.Core, Version=1.6.6.0, Culture=neutral, PublicKeyToken=e1a0d7c8071a5214" />
+    <Reference Include="Awesomium.Windows.Forms, Version=1.6.6.0, Culture=neutral, PublicKeyToken=9bd24830fbe304a0" />
+    <Reference Include="System" />
+    <Reference Include="System.Collections.Immutable, Version=1.2.3.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="accept_change.resx">
+      <DependentUpon>accept_change.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_func_choose.resx">
+      <DependentUpon>admin_func_choose.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin_func_record.resx">
+      <DependentUpon>admin_func_record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ad_add_rules.resx">
+      <DependentUpon>ad_add_rules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ad_ch_success.resx">
+      <DependentUpon>ad_ch_success.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ad_rules_ch.resx">
+      <DependentUpon>ad_rules_ch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ad_rules_hang.resx">
+      <DependentUpon>ad_rules_hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ad_rule_fptree.resx">
+      <DependentUpon>ad_rule_fptree.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="error_no_exist.resx">
+      <DependentUpon>error_no_exist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="error_password.resx">
+      <DependentUpon>error_password.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="first_use.resx">
+      <DependentUpon>first_use.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_do_search.resx">
+      <DependentUpon>user_do_search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_history.resx">
+      <DependentUpon>user_history.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_input_error.resx">
+      <DependentUpon>user_input_error.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_no_limit.resx">
+      <DependentUpon>user_no_limit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_no_limit_hang.resx">
+      <DependentUpon>user_no_limit_hang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_no_resource.resx">
+      <DependentUpon>user_no_resource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_no_rule.resx">
+      <DependentUpon>user_no_rule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user_query.resx">
+      <DependentUpon>user_query.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign_in.resx">
+      <DependentUpon>Sign_in.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TIM图片20200521225551.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20200521_225436.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timg-5.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timg-5%281%29.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\true.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMG_20200522_155922.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\center.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\left.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\right.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
